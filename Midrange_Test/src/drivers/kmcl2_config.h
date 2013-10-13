@@ -40,6 +40,7 @@ volatile uint16 IRQ_CFG;
 	volatile uint16 BLANK18;
 	volatile uint16 BLANK19;
 	volatile uint16 BLANK20;
+	volatile uint16 SCNT;
 }KMCL2_CONFIG;
 
 /**************************************************************************\
