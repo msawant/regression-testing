@@ -19,7 +19,7 @@
 /** @brief Base address of Universal Feedback memory mapped registers */
 #define KMCL2_IP_CONFIG				(KMCL2_BASE + 0x1000)
 
-#define KNX_IP_TIMEKEEPER			(KMCL2_BASE + 0x2000)
+#define KNX_IP_TIMEKEEPER			(KMCL2_BASE + 0x1038)
 
 #define SICK_DSL_A					(KMCL2_BASE + 0x2000)
 
