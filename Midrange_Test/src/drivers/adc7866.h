@@ -3,7 +3,7 @@
 #include <DataTypes.h>
 
 #define KNX_IP_ADC7866_LINELOSS		(KNX_IP_ADC7866 + 0x0024)
-#define KNX_IP_ADC7866_ID_SCRATCH	(KNX_IP_ADC7866 + 0x0040)
+#define KNX_IP_ADC7866_ID_SCRATCH	(KNX_IP_ADC7866 + 0x0030)
 
 typedef struct{
 	volatile uint16 ADC7866_DELPADC;
@@ -49,6 +49,8 @@ extern "C" {
 
 int adc7866_get_module_id();
 int adc7866_test_scratch();
+int adc7866_get_channel_a();
+int adc7866_get_channel_b();
 
 #ifdef __cplusplus
 }
