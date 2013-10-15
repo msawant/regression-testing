@@ -24,3 +24,7 @@ int adc7866_test_scratch(){
 	return stat;
 }
 
+int adc7866_get_channel_1a(){
+	return adc_regs->PADC1A_S;
+}
+
