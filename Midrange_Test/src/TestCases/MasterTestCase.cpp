@@ -9,7 +9,7 @@
 #include "MasterTestCase.hpp"
 #include "drivers/kmcl2_config.h"
 
-//Base Class Constructor
+
 //Constructor
 MasterTestCase::MasterTestCase()
 :TestCase(TEST_CASE_ID_MASTER_TEST){
