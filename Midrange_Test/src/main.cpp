@@ -2,7 +2,8 @@
 
 #include "utils/Io_Stream.hpp"
 #include "Datatypes.h"
-#include "TestCases/MasterTestCase.hpp"
+#include "TestCases/MasterTestCase.hpp"  			//0
+#include "TestCases/TimeKeeperTestCase.hpp"  		//1
 #include "TestCases/DDRReadTestCase.hpp"
 #include "TestCases/DDRWriteTestCase.hpp"
 #include "TestCases/DDRWalkingOnesTestCase.hpp"
@@ -27,8 +28,8 @@
 #define MAX_TEST_CASES	(32)
 void configure_gpio();
 
-int main()
-{
+int main(){
+
 	std::string inputCommandString;
 	std::string responseText;
 	std::string argString[MAX_ARGS];
@@ -56,7 +57,7 @@ int main()
     pTestCaseArray[testCaseArrayIndex++] = new LCDTestCase();                   //50
     pTestCaseArray[testCaseArrayIndex++] = new UnivFbkTestCase();               //60
 	pTestCaseArray[testCaseArrayIndex++] = new DIGINTestCase();               	//70
-	
+	pTestCaseArray[testCaseArrayIndex++] = new TimeKeeperTestCase();			//01
 	// Perform Autonomous Tests
 	printf("\n \n Performing Autonomous MidRange Testing \n \n");
 	
